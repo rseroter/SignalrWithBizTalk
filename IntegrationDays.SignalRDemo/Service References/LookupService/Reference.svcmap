@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bf2e5e44-1507-4915-924f-83b70dc6f1b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost//IntegrationDays.SignalRDemo.BT/IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BizTalkServiceInstance.wsdl" MetadataType="Wsdl" ID="d9c9d67c-de6d-4265-b112-f27d9f25aa45" SourceId="1" SourceUrl="http://seroter-tier3/IntegrationDays.SignalRDemo.BT/IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.svc?wsdl" />
+    <MetadataFile FileName="IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.xsd" MetadataType="Schema" ID="ee302a45-22e9-4528-9e6e-45ce9f29883d" SourceId="1" SourceUrl="http://seroter-tier3/IntegrationDays.SignalRDemo.BT/IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.svc?xsd=xsd2" />
+    <MetadataFile FileName="IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.disco" MetadataType="Disco" ID="9b5cff95-0a0f-48b4-9c35-ae6c8bc68d87" SourceId="1" SourceUrl="http://seroter-tier3/IntegrationDays.SignalRDemo.BT/IntegrationDays_SignalRDemo_BT_ProcessInventoryRequest_ReceiveInventoryRequestPort.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

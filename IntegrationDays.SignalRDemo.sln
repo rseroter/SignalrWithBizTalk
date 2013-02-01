@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationDays.SignalRDemo", "IntegrationDays.SignalRDemo\IntegrationDays.SignalRDemo.csproj", "{38997D9D-F851-48CC-A9B7-87156838308F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationDays.SignalRDemo.BT", "IntegrationDays.SignalRDemo.BT\IntegrationDays.SignalRDemo.BT.btproj", "{AE3E43D2-E387-4196-80D8-ECE6D82143FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38997D9D-F851-48CC-A9B7-87156838308F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38997D9D-F851-48CC-A9B7-87156838308F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38997D9D-F851-48CC-A9B7-87156838308F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38997D9D-F851-48CC-A9B7-87156838308F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3E43D2-E387-4196-80D8-ECE6D82143FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3E43D2-E387-4196-80D8-ECE6D82143FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3E43D2-E387-4196-80D8-ECE6D82143FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3E43D2-E387-4196-80D8-ECE6D82143FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,421 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="00bc7508-ed1a-490e-a35a-dcf8c2bafdb6" LowerBound="1.1" HigherBound="97.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="IntegrationDays.SignalRDemo.BT" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="d99fd486-18f7-4013-8e77-42a4fdc21e38" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveInventoryRequestPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3e4a8acd-fb9f-428d-85c3-369d53ab6441" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LookupInventory" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="98853b97-6d83-4041-8a87-94e61d645028" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.39">
+                    <om:Property Name="Ref" Value="IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_XML" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="2293a659-0cda-4fec-8f81-2016e37daf60" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendInventoryResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="4dc88f42-42d2-4aa5-92c3-41c7727519af" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PublishResults" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="900ba837-eb6f-4041-82c2-ba1cdc876efd" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.64">
+                    <om:Property Name="Ref" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResults" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="ef08ec2e-e7d6-42f5-a3c1-5e54941fd909" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="96.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessInventoryRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="96221f94-c87c-4a9b-b4a2-e9012123f2aa" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Random" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RandomGenerator3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8d754f4f-a274-49ab-9813-11c5fa46cc27" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Random" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RandomGenerator2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="61447257-3588-4fce-9f77-991c004b9e49" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Random" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RandomGenerator" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c67a1a57-e64c-4a82-bb4c-38b20002a742" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResults" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PublishResults3_Output" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d5c280c9-f796-45a2-aef6-43a372e073d8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResults" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PublishResults2_Output" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="2f7b5637-609f-421e-96fa-83937e67a4ce" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_XML" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InventoryLookupRequest_Input" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="126c07bc-e010-4253-92e2-2c1af5dbc580" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResults" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PublishResults1_Output" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="f6dd8a7a-2620-4369-88ce-4adcde8f582c" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="97e19ded-d63b-477d-b118-34deb59ba3f1" ParentLink="ServiceBody_Statement" LowerBound="34.1" HigherBound="39.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveInventoryRequestPort" />
+                    <om:Property Name="MessageName" Value="InventoryLookupRequest_Input" />
+                    <om:Property Name="OperationName" Value="LookupInventory" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Parallel" OID="d421ce37-a458-439f-ac37-d867c84ba4d0" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="94.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Parallel Query" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="ParallelBranch" OID="21969c95-cf39-4913-8f26-2b473d172c0b" ParentLink="ReallyComplexStatement_Branch" LowerBound="44.1" HigherBound="58.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="10589828-a1ba-488e-a3aa-c241fd042ae1" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="54.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Lookup SAP" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="217689af-5c57-47a3-89d8-2a923aa4553f" ParentLink="ComplexStatement_Statement" LowerBound="47.1" HigherBound="49.1">
+                                <om:Property Name="ClassName" Value="IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="c7caf76c-a24a-4784-af84-d71b602b6c52" ParentLink="Transform_InputMessagePartRef" LowerBound="48.138" HigherBound="48.166">
+                                    <om:Property Name="MessageRef" Value="InventoryLookupRequest_Input" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="4e8742cd-fc46-4991-b786-40780a32ab72" ParentLink="Transform_OutputMessagePartRef" LowerBound="48.36" HigherBound="48.58">
+                                    <om:Property Name="MessageRef" Value="PublishResults1_Output" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="2bf418a4-5cea-44aa-ab97-5d3068ca94b7" ParentLink="ComplexStatement_Statement" LowerBound="49.1" HigherBound="53.1">
+                                <om:Property Name="Expression" Value="PublishResults1_Output.providerId = &quot;SAP System&quot;;&#xD;&#xA;&#xD;&#xA;PublishResults1_Output.stockAmount = RandomGenerator.Next(0, 150);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Set Inventory" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="46efac83-bf39-4a5f-8feb-94f8c7a77949" ParentLink="Construct_MessageRef" LowerBound="45.31" HigherBound="45.53">
+                                <om:Property Name="Ref" Value="PublishResults1_Output" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Delay" OID="c74627c6-613b-4578-be40-bdc2235fe2c1" ParentLink="ComplexStatement_Statement" LowerBound="54.1" HigherBound="56.1">
+                            <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,0,2);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Delay 2 seconds" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="b1bb0028-6e42-46ee-8571-7e8d47717b3e" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="58.1">
+                            <om:Property Name="PortName" Value="SendInventoryResponsePort" />
+                            <om:Property Name="MessageName" Value="PublishResults1_Output" />
+                            <om:Property Name="OperationName" Value="PublishResults" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Results" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ParallelBranch" OID="6a8d6f7c-cf95-40eb-9e51-5d1b6a98ba46" ParentLink="ReallyComplexStatement_Branch" LowerBound="61.1" HigherBound="75.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_2" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="05ffa830-7591-4dc0-b998-207127598577" ParentLink="ComplexStatement_Statement" LowerBound="61.1" HigherBound="71.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Lookup NEXUS (Partner)" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="dfa2718e-84a4-4b08-be92-461e9fdc89d5" ParentLink="Construct_MessageRef" LowerBound="62.31" HigherBound="62.53">
+                                <om:Property Name="Ref" Value="PublishResults2_Output" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="f5bf3bbf-64a1-4bbb-acf9-3ed68b146927" ParentLink="ComplexStatement_Statement" LowerBound="64.1" HigherBound="66.1">
+                                <om:Property Name="ClassName" Value="IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="5ca38a60-8c51-4ec9-880c-8be5d5038607" ParentLink="Transform_InputMessagePartRef" LowerBound="65.138" HigherBound="65.166">
+                                    <om:Property Name="MessageRef" Value="InventoryLookupRequest_Input" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="55a7b3d8-3b03-4271-a612-bb0f3e225d83" ParentLink="Transform_OutputMessagePartRef" LowerBound="65.36" HigherBound="65.58">
+                                    <om:Property Name="MessageRef" Value="PublishResults2_Output" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="5799fc3b-b139-4242-bd5e-74abcc88fd89" ParentLink="ComplexStatement_Statement" LowerBound="66.1" HigherBound="70.1">
+                                <om:Property Name="Expression" Value="PublishResults2_Output.providerId = &quot;NEXUS System (Partner)&quot;;&#xD;&#xA;&#xD;&#xA;PublishResults2_Output.stockAmount = RandomGenerator2.Next(10, 90);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Set Inventory" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Delay" OID="b332e30e-f246-4604-8eb4-bc7b16b7f1fd" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="73.1">
+                            <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,0,6);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Delay 6 seconds" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="1d55f57d-9d76-4a90-a33f-75703452252a" ParentLink="ComplexStatement_Statement" LowerBound="73.1" HigherBound="75.1">
+                            <om:Property Name="PortName" Value="SendInventoryResponsePort" />
+                            <om:Property Name="MessageName" Value="PublishResults2_Output" />
+                            <om:Property Name="OperationName" Value="PublishResults" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Results" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ParallelBranch" OID="9ef823bc-613e-43ad-9942-c355798a257b" ParentLink="ReallyComplexStatement_Branch" LowerBound="78.1" HigherBound="92.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_3" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="ed36bf2f-e0c5-4e3d-9520-1621d0801b1d" ParentLink="ComplexStatement_Statement" LowerBound="78.1" HigherBound="88.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Lookup Inventory Plus (Partner)" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="228c923c-f93a-4fc4-9998-0bf5cb76d32f" ParentLink="Construct_MessageRef" LowerBound="79.31" HigherBound="79.53">
+                                <om:Property Name="Ref" Value="PublishResults3_Output" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="f911ac7a-dd40-4837-b55c-3c0855124079" ParentLink="ComplexStatement_Statement" LowerBound="81.1" HigherBound="83.1">
+                                <om:Property Name="ClassName" Value="IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="06b931ce-ee79-4383-979f-a05072d11f7f" ParentLink="Transform_InputMessagePartRef" LowerBound="82.138" HigherBound="82.166">
+                                    <om:Property Name="MessageRef" Value="InventoryLookupRequest_Input" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_5" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="217f0c2a-1e6c-4ac1-9d62-0dba8153f31a" ParentLink="Transform_OutputMessagePartRef" LowerBound="82.36" HigherBound="82.58">
+                                    <om:Property Name="MessageRef" Value="PublishResults3_Output" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_6" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="8e7b9cfa-53bf-48c4-a1d0-749a9e891ff6" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="87.1">
+                                <om:Property Name="Expression" Value="PublishResults3_Output.providerId = &quot;InventoryPlus System (Partner)&quot;;&#xD;&#xA;&#xD;&#xA;PublishResults3_Output.stockAmount = RandomGenerator3.Next(2, 200);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Set Inventory" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Delay" OID="7df9815f-51cf-4a51-971f-6aa9569c38f1" ParentLink="ComplexStatement_Statement" LowerBound="88.1" HigherBound="90.1">
+                            <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,0,10);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Delay 10 seconds" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="01efef0f-fac5-456d-853e-b6c26237ba75" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="92.1">
+                            <om:Property Name="PortName" Value="SendInventoryResponsePort" />
+                            <om:Property Name="MessageName" Value="PublishResults3_Output" />
+                            <om:Property Name="OperationName" Value="PublishResults" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Results" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="59d39938-707c-4561-98d7-161c287df6f7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="0" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.ReceiveInventoryRequestPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveInventoryRequestPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8ee00b7e-1ca6-4f62-80f5-4e839566b07a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a0a47fed-435f-4737-a78a-02b4c9b0021f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="35" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="IntegrationDays.SignalRDemo.BT.SendInventoryResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendInventoryResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="659a180e-f528-44a0-82e8-2f842cec7cbe" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module IntegrationDays.SignalRDemo.BT
+{
+    public porttype ReceiveInventoryRequestPortType
+    {
+        oneway LookupInventory
+        {
+            InventoryLookupRequest_XML
+        };
+    };
+    internal porttype SendInventoryResponsePortType
+    {
+        oneway PublishResults
+        {
+            InventoryResponseService_tempuri_org.PublishResults
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProcessInventoryRequest
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveInventoryRequestPortType ReceiveInventoryRequestPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendInventoryResponsePortType SendInventoryResponsePort;
+        message InventoryResponseService_tempuri_org.PublishResults PublishResults3_Output;
+        message InventoryResponseService_tempuri_org.PublishResults PublishResults2_Output;
+        message InventoryLookupRequest_XML InventoryLookupRequest_Input;
+        message InventoryResponseService_tempuri_org.PublishResults PublishResults1_Output;
+        System.Random RandomGenerator3;
+        System.Random RandomGenerator2;
+        System.Random RandomGenerator;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("97e19ded-d63b-477d-b118-34deb59ba3f1")]
+            activate receive (ReceiveInventoryRequestPort.LookupInventory, InventoryLookupRequest_Input);
+            RandomGenerator3 = new System.Random();
+            RandomGenerator2 = new System.Random();
+            RandomGenerator = new System.Random();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d421ce37-a458-439f-ac37-d867c84ba4d0")]
+            parallel
+            {
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("10589828-a1ba-488e-a3aa-c241fd042ae1")]
+                    construct PublishResults1_Output
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("217689af-5c57-47a3-89d8-2a923aa4553f")]
+                        transform (PublishResults1_Output) = IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse (InventoryLookupRequest_Input);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2bf418a4-5cea-44aa-ab97-5d3068ca94b7")]
+                        PublishResults1_Output.providerId = "SAP System";
+                        
+                        PublishResults1_Output.stockAmount = RandomGenerator.Next(0, 150);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c74627c6-613b-4578-be40-bdc2235fe2c1")]
+                    delay new System.TimeSpan(0,0,0,2);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b1bb0028-6e42-46ee-8571-7e8d47717b3e")]
+                    send (SendInventoryResponsePort.PublishResults, PublishResults1_Output);
+                }
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("05ffa830-7591-4dc0-b998-207127598577")]
+                    construct PublishResults2_Output
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f5bf3bbf-64a1-4bbb-acf9-3ed68b146927")]
+                        transform (PublishResults2_Output) = IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse (InventoryLookupRequest_Input);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5799fc3b-b139-4242-bd5e-74abcc88fd89")]
+                        PublishResults2_Output.providerId = "NEXUS System (Partner)";
+                        
+                        PublishResults2_Output.stockAmount = RandomGenerator2.Next(10, 90);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b332e30e-f246-4604-8eb4-bc7b16b7f1fd")]
+                    delay new System.TimeSpan(0,0,0,6);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1d55f57d-9d76-4a90-a33f-75703452252a")]
+                    send (SendInventoryResponsePort.PublishResults, PublishResults2_Output);
+                }
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed36bf2f-e0c5-4e3d-9520-1621d0801b1d")]
+                    construct PublishResults3_Output
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f911ac7a-dd40-4837-b55c-3c0855124079")]
+                        transform (PublishResults3_Output) = IntegrationDays.SignalRDemo.BT.InventoryLookupRequest_To_InventoryResponse (InventoryLookupRequest_Input);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8e7b9cfa-53bf-48c4-a1d0-749a9e891ff6")]
+                        PublishResults3_Output.providerId = "InventoryPlus System (Partner)";
+                        
+                        PublishResults3_Output.stockAmount = RandomGenerator3.Next(2, 200);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7df9815f-51cf-4a51-971f-6aa9569c38f1")]
+                    delay new System.TimeSpan(0,0,0,10);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("01efef0f-fac5-456d-853e-b6c26237ba75")]
+                    send (SendInventoryResponsePort.PublishResults, PublishResults3_Output);
+                }
+            }
+        }
+    }
+}
+

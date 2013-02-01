@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="815b858b-7226-4090-a07e-a9f060a50a9f">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="IntegrationDays.SignalRDemo.BT" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="4e95a6fb-b227-415d-ab16-caee6f5772e6" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IInventoryResponseService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IInventoryResponseService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="29419f03-1606-44de-a838-394e43ee8590" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;PublishResults&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="PublishResults" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c4f09330-4122-427a-8c41-508899469bee" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="IntegrationDays.SignalRDemo.BT.IInventoryResponseService_PublishResults_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IInventoryResponseService_PublishResults_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IInventoryResponseService/PublishResults&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="67770f7f-fc51-47d0-9586-abe12c430af7" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="IntegrationDays.SignalRDemo.BT.IInventoryResponseService_PublishResults_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IInventoryResponseService_PublishResults_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IInventoryResponseService/PublishResultsResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="765f759a-b551-47a5-929b-017949488ca5" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IInventoryResponseService_PublishResults_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IInventoryResponseService_PublishResults_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="72eb294e-fd98-44ab-95a3-76eab438a554" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResults" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="56706e9b-bac4-4348-8cc3-56b659848fda" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IInventoryResponseService_PublishResults_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IInventoryResponseService_PublishResults_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="8921e0d2-4148-4228-80de-79b08a207993" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="IntegrationDays.SignalRDemo.BT.InventoryResponseService_tempuri_org.PublishResultsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e7d24173-e742-4948-8f36-136404961df5" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;InventoryResponseService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="InventoryResponseServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="660887cb-cb5d-45ee-be53-79c6537ddd1d" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module IntegrationDays.SignalRDemo.BT
+{
+    internal messagetype IInventoryResponseService_PublishResults_InputMessage
+    {
+        body InventoryResponseService_tempuri_org.PublishResults parameters;
+    };
+    internal messagetype IInventoryResponseService_PublishResults_OutputMessage
+    {
+        body InventoryResponseService_tempuri_org.PublishResultsResponse parameters;
+    };
+    internal porttype IInventoryResponseService
+    {
+        requestresponse PublishResults
+        {
+            IInventoryResponseService_PublishResults_InputMessage, IInventoryResponseService_PublishResults_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service InventoryResponseServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

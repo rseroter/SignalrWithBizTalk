@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IntegrationDays.SignalRDemo.InventoryResponseService" CodeBehind="InventoryResponseService.svc.cs" %>
